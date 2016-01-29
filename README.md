@@ -1,4 +1,4 @@
-# PardotCodingExcercise
+## PardotCodingExcercise
 # Candiate: Rahmaan Lodhia
 
 Problem Statement: You are given a function 'secret()' that accepts a single integer parameter and returns an integer. In your favorite programming language, write a command-line program that takes one command-line argument (a number) and determines if the secret() function is additive [secret(x+y) = secret(x) + secret(y)], for all combinations x and y, where x and y are all prime numbers less than the number passed via the command-line argument.  Describe how to run your examples.
@@ -11,11 +11,11 @@ Problem Statement: You are given a function 'secret()' that accepts a single int
 
 3. Compile the program first with the following command:
 
-javac SecretAdditiveTest.java
+**javac SecretAdditiveTest.java**
 
 4. The SecretAdditiveTest.class will be created in the working directory, and you can now run the java program with the following command:
 
-java SecretAdditiveTest n
+**java SecretAdditiveTest n**
 
 (Where “n” is any integer number. Inputting anything other than a number will result in an error message from the program. )
 
@@ -23,16 +23,117 @@ java SecretAdditiveTest n
 
 Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 5  
 Testing All Combinations of Prime Numbers: [2, 3]  
+Testing [2, 2]: True  
+Testing [2, 3]: True  
+Testing [3, 2]: True  
+Testing [3, 3]: True  
 The Secret Function Has Succeeded With All Combination of Primes!  
 The Secret Function is Additive!  
 
-Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 50  
-Testing All Combinations of Prime Numbers: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]  
+Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 10  
+Testing All Combinations of Prime Numbers: [2, 3, 5, 7]  
+Testing [2, 2]: True  
+Testing [2, 3]: True  
+Testing [2, 5]: True  
+Testing [2, 7]: True  
+Testing [3, 2]: True  
+Testing [3, 3]: True  
+Testing [3, 5]: True  
+Testing [3, 7]: True  
+Testing [5, 2]: True  
+Testing [5, 3]: True  
+Testing [5, 5]: True  
+Testing [5, 7]: True  
+Testing [7, 2]: True  
+Testing [7, 3]: True  
+Testing [7, 5]: True  
+Testing [7, 7]: True  
 The Secret Function Has Succeeded With All Combination of Primes!  
 The Secret Function is Additive!  
 
-Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 100  
-Testing All Combinations of Prime Numbers: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]  
+Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 25  
+Testing All Combinations of Prime Numbers: [2, 3, 5, 7, 11, 13, 17, 19, 23]  
+Testing [2, 2]: True  
+Testing [2, 3]: True  
+Testing [2, 5]: True  
+Testing [2, 7]: True  
+Testing [2, 11]: True  
+Testing [2, 13]: True  
+Testing [2, 17]: True  
+Testing [2, 19]: True  
+Testing [2, 23]: True  
+Testing [3, 2]: True  
+Testing [3, 3]: True  
+Testing [3, 5]: True  
+Testing [3, 7]: True  
+Testing [3, 11]: True  
+Testing [3, 13]: True  
+Testing [3, 17]: True  
+Testing [3, 19]: True  
+Testing [3, 23]: True  
+Testing [5, 2]: True  
+Testing [5, 3]: True  
+Testing [5, 5]: True  
+Testing [5, 7]: True  
+Testing [5, 11]: True  
+Testing [5, 13]: True  
+Testing [5, 17]: True  
+Testing [5, 19]: True  
+Testing [5, 23]: True  
+Testing [7, 2]: True  
+Testing [7, 3]: True  
+Testing [7, 5]: True  
+Testing [7, 7]: True  
+Testing [7, 11]: True  
+Testing [7, 13]: True  
+Testing [7, 17]: True  
+Testing [7, 19]: True  
+Testing [7, 23]: True  
+Testing [11, 2]: True  
+Testing [11, 3]: True  
+Testing [11, 5]: True  
+Testing [11, 7]: True  
+Testing [11, 11]: True  
+Testing [11, 13]: True  
+Testing [11, 17]: True  
+Testing [11, 19]: True  
+Testing [11, 23]: True  
+Testing [13, 2]: True  
+Testing [13, 3]: True  
+Testing [13, 5]: True  
+Testing [13, 7]: True  
+Testing [13, 11]: True  
+Testing [13, 13]: True  
+Testing [13, 17]: True  
+Testing [13, 19]: True  
+Testing [13, 23]: True  
+Testing [17, 2]: True  
+Testing [17, 3]: True  
+Testing [17, 5]: True  
+Testing [17, 7]: True  
+Testing [17, 11]: True  
+Testing [17, 13]: True  
+Testing [17, 17]: True  
+Testing [17, 19]: True  
+Testing [17, 23]: True  
+Testing [19, 2]: True  
+Testing [19, 3]: True  
+Testing [19, 5]: True  
+Testing [19, 7]: True  
+Testing [19, 11]: True  
+Testing [19, 13]: True  
+Testing [19, 17]: True  
+Testing [19, 19]: True  
+Testing [19, 23]: True  
+Testing [23, 2]: True  
+Testing [23, 3]: True  
+Testing [23, 5]: True  
+Testing [23, 7]: True  
+Testing [23, 11]: True  
+Testing [23, 13]: True  
+Testing [23, 17]: True  
+Testing [23, 19]: True  
+Testing [23, 23]: True  
 The Secret Function Has Succeeded With All Combination of Primes!  
 The Secret Function is Additive!  
 
