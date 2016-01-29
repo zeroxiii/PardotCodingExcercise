@@ -18,7 +18,7 @@ public class SecretAdditiveTest
 			} 
 			catch (NumberFormatException e)
 			{
-		        System.err.println("Argument " + args[0] + " must be an integer.");
+		        System.err.println("Argument " + args[0] + " must be an integer. All other inputs are ignored.");
 		        System.exit(1);
 			}
 		}
@@ -31,15 +31,20 @@ public class SecretAdditiveTest
 		
 		System.out.println("Testing All Combinations of Prime Numbers: " + testNumbers);
 		
-		for (int i = 0; i < testNumbers.size(); i++)
+		for (int x : testNumbers)
 		{
-			for (int j = 0; j < testNumbers.size(); j++)
+			for (int y : testNumbers)
 			{
-				if(!isAdditive(testNumbers.get(i), testNumbers.get(j)))
+				System.out.printf("Testing [%d, %d]: ", x, y);
+				
+				if(!isAdditive(x, y))
 				{
-					System.out.printf("The Secret Function Failed the Additve Test with Numbers: [%d, %d]\n", testNumbers.get(i), testNumbers.get(j));
+					System.out.println("False");
+					System.out.println("The Secret Function Has Failed the Additive Test!");
 					return false;
 				}
+				
+				System.out.println("True");
 			}
 		}
 		
