@@ -1,25 +1,22 @@
-## PardotCodingExcercise
-# Candiate: Rahmaan Lodhia
+# PardotCodingExcercise
+## Candiate: Rahmaan Lodhia
 
 Problem Statement: You are given a function 'secret()' that accepts a single integer parameter and returns an integer. In your favorite programming language, write a command-line program that takes one command-line argument (a number) and determines if the secret() function is additive [secret(x+y) = secret(x) + secret(y)], for all combinations x and y, where x and y are all prime numbers less than the number passed via the command-line argument.  Describe how to run your examples.
 
-# Instructions
+## Instructions
 
 1. Download either the src folder or simply just the SecretAddtiveTest.java file from src folder.
 
 2. On a computer running the latest version of Java (Note: this program was compiled using Java Version 1.8.0_71), open up terminal or command prompt and navigate to the directory housing the SecretAdditveTest.java file.
 
-3. Compile the program first with the following command:
-
+3. Compile the program first with the following command:  
 **javac SecretAdditiveTest.java**
 
-4. The SecretAdditiveTest.class will be created in the working directory, and you can now run the java program with the following command:
-
-**java SecretAdditiveTest n**
-
+4. The SecretAdditiveTest.class will be created in the working directory, and you can now run the java program with the following command:  
+**java SecretAdditiveTest n**  
 (Where “n” is any integer number. Inputting anything other than a number will result in an error message from the program. )
 
-# Sample Outputs
+## Sample Outputs
 
 Rahmaan-Lodhias-Macbook:bin rlodhia$ java SecretAdditiveTest 5  
 Testing All Combinations of Prime Numbers: [2, 3]  
@@ -137,7 +134,7 @@ Testing [23, 23]: True
 The Secret Function Has Succeeded With All Combination of Primes!  
 The Secret Function is Additive!  
 
-# Algorithm
+## Algorithm
 
 The code was run with the following algorithm:
 
@@ -158,7 +155,7 @@ The code was run with the following algorithm:
 
 4. The main function will take the results from the additive tests and display them to the user.
 
-# Notes
+## Notes
 
 The secret() function:  
 For this exercise, a sample secret() function was created within the SecretAdditiveTest class to test the functionality of the program.  The used secret() function is defined as:
